@@ -1,0 +1,15 @@
+[project]
+name = "sky-photo-locator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensky-api",
+    "python-dotenv>=1.2.2",
+    "ruff>=0.15.16",
+    "tzdata>=2026.2",
+]
+
+[tool.uv.sources]
+opensky-api = { git = "https://github.com/openskynetwork/opensky-api", subdirectory = "python" }
